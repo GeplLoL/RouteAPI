@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RouteAPI.Data;
 
@@ -11,9 +12,11 @@ using RouteAPI.Data;
 namespace RouteAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241212071228_CreateBusesAndRoutes")]
+    partial class CreateBusesAndRoutes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -36,7 +39,7 @@ namespace RouteAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Buses", (string)null);
+                    b.ToTable("Buses");
                 });
 
             modelBuilder.Entity("RouteAPI.Models.MyRoute", b =>
@@ -65,7 +68,7 @@ namespace RouteAPI.Migrations
 
                     b.HasIndex("BusId");
 
-                    b.ToTable("MyRoutes", (string)null);
+                    b.ToTable("Routes");
                 });
 
             modelBuilder.Entity("RouteAPI.Models.User", b =>

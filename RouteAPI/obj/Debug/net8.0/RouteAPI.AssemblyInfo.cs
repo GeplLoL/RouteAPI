@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RouteAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f41fc2a17d255c223b018179451b27dae4afdb3d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d54a56036584d2c7c48fdb678268596b507e29b2")]
 [assembly: System.Reflection.AssemblyProductAttribute("RouteAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RouteAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
